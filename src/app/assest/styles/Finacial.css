@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#finacialSolutions {
+    position: relative;
+    background-color: rgba(248, 246, 241, 0.7);
+    margin-top: 90px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.contrianer {
+    position: relative;
+    width: 100%;
+}
+
+#finacialSolutions .header-contrainer {
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.header-contrainer {
+    position: relative; 
+    z-index: 1;
+  }
+  
+  .header-object {
+    position: absolute; /* ทำให้ซ้อนทับ */
+    width: 500px;
+    top: 24%;
+    left: 70%;
+    transform: translateX(-50%); /* จัดให้อยู่ตรงกลาง */
+    z-index: 2; /* สูงกว่า header-contrainer */
+  }
+
+  .header-object img{
+    width: 500px;
+  }
+  
+  .section01-contrainer {
+    position: relative; /* ป้องกันไม่ให้ทับกันผิดพลาด */
+    z-index: 1; /* กำหนดให้ต่ำกว่า header-object */
+  }
+
+#finacialSolutions .header-contrainer img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.header-contrainer .title {
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    position: absolute;
+    margin-top: 10%;
+    left: 5%;
+    z-index: 1;
+    font-size: 96px;
+    color: white;
+}
+.section01-contrainer {
+    height: 620px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 1px solid #E0E0E0; */
+    margin-top: 5%;
+}
+.section01-contrainer .description {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.description .des-1 {
+    width: 10%;
+}
+
+.description .des-1 button {
+    width: 124px;
+    height: 44px;
+    border: 1px dotted rgba(207, 152, 44, 1);
+    border-radius: 42px;
+    font-family: "DM Sans", sans-serif;
+    background-color: white;
+    font-weight: 100;
+}
+.description .des-2 {
+    width: 1200px;
+    height: 540px;
+    text-align: start;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 60px;
+    color: #454545;
+    margin-left: 5%;
+}
+.section02-contrainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    gap: 15px;
+    padding-bottom: 0;
+}
+
+.divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #c5c7c6;
+}
+
+.divider-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section03-contrainer {
+    height: 860px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #E0E0E0;
+    /* margin-top: 16px; */
+}
+.slide-1 {
+    height: 860px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.slide-1 .title-1 {
+    position: absolute;
+    color: white;
+    left: 5%;
+    display: inline;
+}
+.title-1 .col-1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.title-col-1 p{
+    width: 1200px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+.title-1 .col-2 {
+    width: 1500px;
+    height: 474px;
+}
+
+.col-2 .content-col-1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .col-2 .content-col-1 img{
+    margin: 0;
+    justify-content: center;
+}
+
+
+.col-2 .content-col-1 p{
+    width: 600px;
+    height: 260px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+.bg-slide-1 img {
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+}
+
+.slide-2 {
+    height: 860px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+}
+.slide-2 .title-2 {
+    display: flex;
+    width: 100%;
+    margin-right: 20%;
+
+}
+
+.col-2-1 {
+    width: 100%;
+    height: auto;
+    justify-content: end;
+    align-items: end;
+    margin-left: 0%;
+}
+
+
+
+.title-2 .col-2-1 .title-col2-1 p{
+    width: 700px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.title-2 .col-2-1 .content-col2-1 p{
+    width: 700px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.img-col-3 {
+    display: flex;
+    justify-content: center; /* จัดเรียงจากซ้ายไปขวา */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง (ถ้าจำเป็น) */
+    gap: 15%; /* ระยะห่างระหว่างรูป (ถ้าต้องการ) */
+    /* width: 100%; */
+    /* margin-right: 10%; */
+
+  }
+  
+.bg-slide-2 img {
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+    
+}
+.slide-3 {
+    height: 860px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+}
+.slide-3 .title-3 {
+    display: flex;
+    width: 100%;
+    margin-right: 20%;
+
+}
+
+.col-3-1 {
+    width: 100%;
+    height: auto;
+    justify-content: end;
+    align-items: end;
+    margin-left: 0%;
+}
+
+
+
+.title-3 .col-3-1 .title-col3-1 p{
+    width: 700px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.title-3 .col-3-1 .content-col3-1 p{
+    width: 700px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.img-col-3 {
+    display: flex;
+    justify-content: center; /* จัดเรียงจากซ้ายไปขวา */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง (ถ้าจำเป็น) */
+    gap: 15%; /* ระยะห่างระหว่างรูป (ถ้าต้องการ) */
+    /* width: 100%; */
+    /* margin-right: 10%; */
+
+  }
+  
+.bg-slide-3 img {
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+    
+    
+}

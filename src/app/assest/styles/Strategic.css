@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#strategicSolutions {
+    position: relative;
+    background-color: rgba(248, 246, 241, 0.7);
+    margin-top: 90px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.contrianer {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+}
+
+#strategicSolutions .header-contrainer {
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 1px solid #E0E0E0; */
+}
+
+.header-contrainer {
+    position: relative; /* กำหนดให้เป็นจุดอ้างอิง */
+    z-index: 1; /* กำหนดลำดับการแสดงผล */
+  }
+  
+  .header-object {
+    position: absolute; /* ทำให้ซ้อนทับ */
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%); /* จัดให้อยู่ตรงกลาง */
+    z-index: 2; /* สูงกว่า header-contrainer */
+  }
+  
+  .section01-contrainer {
+    position: relative; /* ป้องกันไม่ให้ทับกันผิดพลาด */
+    z-index: 1; /* กำหนดให้ต่ำกว่า header-object */
+  }
+#strategicSolutions .header-contrainer img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.header-contrainer .title {
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    position: absolute;
+    margin-top: 10%;
+    left: 5%;
+    z-index: 1;
+    font-size: 96px;
+    color: white;
+}
+.section01-contrainer {
+    height: 740px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 1px solid #E0E0E0; */
+    margin-top: 16px;
+}
+
+.section01-contrainer .description {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.description .des-1 {
+    width: 10%;
+}
+
+.description .des-1 button {
+    width: 124px;
+    height: 44px;
+    border: 1px dotted rgba(207, 152, 44, 1);
+    border-radius: 42px;
+    font-family: "DM Sans", sans-serif;
+    background-color: white;
+    font-weight: 100;
+}
+.description .des-2 {
+    width: 1048px;
+    height: 540px;
+    text-align: start;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 60px;
+    color: #454545;
+    margin-left: 10%;
+}
+
+.section02-contrainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    gap: 15px;
+    padding-bottom: 6%;
+}
+
+.divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #c5c7c6;
+    /* สีเส้น */
+}
+
+.divider-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section03-contrainer {
+    height: 860px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #E0E0E0;
+    /* margin-top: 16px; */
+}
+.slide-1 {
+    height: 860px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.bg-slide-1 img {
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+}
+
+.slide-1 .title-1 {
+    display: flex;
+    position: absolute;
+    font-size: 96px;
+    color: white;
+    /* top: 10%; */
+    left: 40%;
+}
+.title-1 .col-1 {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-1 .col-1 {
+    width: 647px;
+    height: 166px;
+    left: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-col-1 p{
+    width: 730px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+.content-col-1 p{
+    width:720px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+.slide-2 {
+    height: 860px;
+    position: relative;
+    /* z-index: 1; */
+    overflow: hidden;
+
+}
+
+.slide-2 .title-2 {
+    display: flex;
+    /* position: absolute; */
+    /* top: 10%; */
+}
+
+.title-2 .col-1 {
+    width: 100%;
+    height: auto;
+    /* justify-content: end;
+    align-items: end; */
+    /* margin-left: 0%; */
+}
+
+
+.title-2 .col-1 .title-col-1 p{
+    width: 860px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 5%;
+    /* margin-left: 100%; */
+}
+
+.title-2 .col-1 .content-col-1 p{
+    width: 800px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    /* margin-left: 100%; */
+
+}
+
+
+.title-2 .col-2 .img-col-2 img{
+    width: 647px;
+}
+
+.bg-slide-2 img {
+    /* width: 1376px; */
+    height: 860px;
+    object-fit: cover;
+    
+}
+.bg-slide-3 img {
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+}
+.slide-3 {
+    height: 860px;
+    position: relative;
+    /* z-index: 1; */
+    overflow: hidden;
+
+}
+
+.slide-3 .title-3 {
+    display: flex;
+    position: absolute;
+    top: 10%;
+}
+
+.title-3 .col-3 {
+    width: 100%;
+    height: auto;
+    justify-self: end;
+    margin-left: 80%;
+}
+
+
+.title-3 .col-3 .title-col-3 p{
+    width: 860px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 5%;
+    /* margin-left: 100%; */
+}
+
+.title-3 .col-3 .content-col-3 p{
+    width: 820px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    /* margin-left: 100%; */
+
+}
+
+.title-3 .col-3 .img-col-3 img{
+    width: 647px;
+}
+
+.bg-slide-4 img {
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+}
+.slide-4 {
+    height: 860px;
+    position: relative;
+    /* z-index: 1; */
+    overflow: hidden;
+
+}
+
+.slide-4 .title-4 {
+    display: flex;
+    position: absolute;
+    top: 10%;
+}
+
+.title-4 .col-4 {
+    width: 100%;
+    height: auto;
+    justify-self: end;
+    margin-left: 10%;
+}
+
+
+.title-4 .col-4 .title-col-4 p{
+    width: 860px;
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 83px;
+    color: white;
+    margin-bottom: 5%;
+    /* margin-left: 100%; */
+}
+
+.title-4 .col-4 .content-col-4 p{
+    width: 520px;
+    font-family: "DM Sans";
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 26px;
+    color: white;
+    /* margin-left: 100%; */
+
+}
+
+.title-4 .col-4 .img-col-4 img{
+    width: 647px;
+}
+

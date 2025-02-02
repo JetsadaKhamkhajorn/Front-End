@@ -66,6 +66,8 @@
 
 .group_right {
     text-align: start;
+    font-size: 56px;
+    line-height: 60px;
 }
 
 .text p {

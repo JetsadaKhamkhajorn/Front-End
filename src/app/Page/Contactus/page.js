@@ -36,11 +36,12 @@ export default function ContactPage() {
             });
         };
 
-        if (window.google) {
+        if (window.google && window.google.maps) {
             initMap();
         } else {
             const script = document.createElement("script");
-            script.src = `https://maps.googleapis.com/maps/api/js?key=KEY`;
+            // script.src = `https://maps.googleapis.com/maps/api/js?key=KEY`;
+            script.src = `https://www.google.com/maps/dir//jay+capital+advisory+limited/@13.7304047,100.5189753,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x30e29f34ed7b50cb:0x74ac38e09d930bcf!2m2!1d100.5601748!2d13.7303247?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D`;
             script.async = true;
             script.onload = initMap; https://ant.design/
             document.head.appendChild(script);

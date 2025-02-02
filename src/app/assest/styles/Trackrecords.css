@@ -1,0 +1,243 @@
+/* For small devices like phones (max width: 600px) */
+@media screen and (max-width: 600px) {
+    #trackrecords {
+        padding: 0 20px;
+    }
+
+    #trackrecords .header-container {
+        height: 300px;
+    }
+
+    #trackrecords .header-container img {
+        height: 300px;
+    }
+
+    .title {
+        font-size: 36px; /* Smaller font size for mobile */
+        top: 40%; /* Adjust vertical position */
+        left: 10%;
+    }
+}
+
+/* For medium devices like tablets (max width: 768px) */
+@media screen and (max-width: 768px) {
+    #trackrecords {
+        padding: 0 30px;
+    }
+
+    #trackrecords .header-container {
+        height: 400px;
+    }
+
+    #trackrecords .header-container img {
+        height: 400px;
+    }
+
+    .title {
+        font-size: 60px; /* Smaller font size for tablets */
+        top: 25%; /* Adjust vertical position */
+        left: 8%;
+    }
+
+    .carousel-slide {
+        font-size: 18px;
+        height: 200px;
+        line-height: 200px; 
+      }
+      .ant-carousel .slick-slide {
+        height: 30vh; 
+      }
+}
+
+/* For larger screens like desktops */
+@media screen and (min-width: 1024px) {
+    #trackrecords {
+        padding: 0 50px;
+    }
+
+    #trackrecords .header-container {
+        height: 480px;
+    }
+
+    #trackrecords .header-container img {
+        height: 480px;
+    }
+
+    .title {
+        font-size: 96px; /* Original size for desktops */
+        left: 5%;
+        margin: auto;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+#trackrecords{
+    position: relative;
+    background-color:rgba(248, 246, 241, 0.7);
+    margin-top: 90px;
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.contrianer{
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+
+}
+#trackrecords .header-contrainer {
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#trackrecords .header-contrainer img{
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.header-contrainer .title {
+    font-family: "Kudryashev Headline";
+    font-weight: 400;
+    position: absolute;
+    margin-top: 10%;
+    left: 5%;
+    z-index: 1;
+    font-size: 96px;
+    color: white;
+}
+
+.section01-contrainer{
+    height: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* border: 1px solid #E0E0E0; */
+    margin-top: 16px;
+}
+
+.section01-contrainer .description{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.description .des-1{
+    width: 214px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0;
+    color: #000000;
+}
+.description .des-2{
+    width: 890px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 60px;
+    margin: 0;
+    color: rgba(69, 69, 69, 1);
+    /* top: 0%; */
+}
+
+.section02-contrainer{
+    height: 800px;
+    /* border: 1px solid #E0E0E0; */
+    border-radius: 20px;
+    margin-top: 16px;
+    color: #000000;
+}
+
+
+.slide-1{
+    height: 800px;
+}
+.slide-1 img{
+    width: 75%; /* Prevent the image from exceeding its container */
+    height: 75%; /* Keep the image aspect ratio */
+    object-fit: contain; 
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.slide-2 img{
+    width: 70%; /* Prevent the image from exceeding its container */
+    height: 70%; /* Keep the image aspect ratio */
+    object-fit: contain; 
+    display: block;
+    margin: auto;
+}
+.ant-carousel .slick-slide {
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #793665; */
+    color: white;
+    border-radius: 20px;
+  }
+  
+
+/* ปรับลูกศรซ้าย */
+.ant-carousel .slick-prev {
+    font-size: 56px;
+    transform: scale(1.5);
+    display: flex; /* จัดเนื้อหาให้อยู่ตรงกลาง */
+    justify-content: center;
+    align-items: center;
+    color: black; /* สีลูกศร */
+    z-index: 2; /* ให้อยู่ด้านหน้าสไลด์ */
+}
+
+/* ปรับลูกศรขวา */
+.ant-carousel .slick-next {
+    font-size: 56px;
+    transform: scale(1.5);
+    display: flex; /* จัดเนื้อหาให้อยู่ตรงกลาง */
+    justify-content: center;
+    align-items: center;
+    color: black; /* สีลูกศร */
+    z-index: 2; /* ให้อยู่ด้านหน้าสไลด์ */
+}
+
+/* ปรับระยะห่างจากขอบของ Carousel */
+.ant-carousel .slick-prev {
+    left: -20px; /* ปรับระยะห่างด้านซ้าย */
+}
+
+.ant-carousel .slick-next {
+    right: -20px; /* ปรับระยะห่างด้านขวา */
+}
+
+/* ปรับสีเมื่อ hover */
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-next:hover {
+    background: rgba(255, 255, 255, 0.7); /* สีพื้นหลังเมื่อ hover */
+    color: black; /* สีลูกศรเมื่อ hover */
+}
+
+/* สีของ dots เมื่อไม่ถูกเลือก */
+.ant-carousel .slick-dots li button {
+    background-color: rgba(83, 83, 83, 0.842); /* เปลี่ยนสี dot ที่ไม่ได้เลือก */
+    width: 12px; /* ขนาดของ dot */
+    height: 12px; /* ขนาดของ dot */
+    border-radius: 50%; /* ทำให้ dot เป็นวงกลม */
+}
+
+/* สีของ dots เมื่อถูกเลือก */
+.ant-carousel .slick-dots li.slick-active button {
+    background-color: rgba(0, 0, 0, 0.8); /* เปลี่ยนสี dot ที่ถูกเลือก */
+    width: 16px; /* ขนาดที่ใหญ่ขึ้นเมื่อเลือก */
+    height: 16px; /* ขนาดที่ใหญ่ขึ้นเมื่อเลือก */
+}
+

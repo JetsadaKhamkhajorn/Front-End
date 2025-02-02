@@ -7,6 +7,8 @@ import { useRouter } from 'next/navigation';
 
 import styled from 'styled-components';
 import Image_logo from "../assest/image/GroupLogo.png"
+import Link from 'next/link';
+import KnowledgeSharingPage from '../Page/Knowledge/page';
 
 const StyledMenu = styled(Menu)`
   .ant-menu-item {
@@ -72,30 +74,7 @@ export default function Header() {
       key: 'home',
       path: '/'
     },
-    {
-      label: (
-        <>
-          Service {modeMobile ? '' : openSubMenu ? <DownOutlined style={{ fontSize: '10px' }} /> : <RightOutlined style={{ fontSize: '10px' }} />}
-        </>
-      ),
-      key: 'SubMenu',
-      children: [
-        {
-          type: 'group',
-          label: 'Item 1',
-          children: [
-            {
-              label: 'Option 1',
-              key: 'setting:1',
-            },
-            {
-              label: 'Option 2',
-              key: 'setting:2',
-            },
-          ],
-        },
-      ],
-    },
+    
     {
       label: (
         <>
@@ -104,6 +83,42 @@ export default function Header() {
       ),
       key: 'trackrecord',
       path: '/Page/Trackrecords'
+    },
+    {
+      label: (
+        <>
+          Our Team
+        </>
+      ),
+      key: 'ourteam',
+      path: '/Page/OurTeam'
+    },
+    {
+      label: (
+        <>
+          BusinessReorientation
+        </>
+      ),
+      key: 'businessRT',
+      path: '/Page/BusinessReorientation'
+    },
+    {
+      label: (
+        <>
+          FinacialSolutions
+        </>
+      ),
+      key: 'finacialSolutions',
+      path: '/Page/FinacialSolutions'
+    },
+    {
+      label: (
+        <>
+          StrategicSolutions
+        </>
+      ),
+      key: 'strategicSolutions',
+      path: '/Page/StrategicSolutions'
     },
     {
       label: (
@@ -117,24 +132,13 @@ export default function Header() {
     {
       label: (
         <>
-          <Button
-            style={{
-              backgroundColor: "#CF982C",
-              width: "179px",
-              height: "50px",
-              border: "none",
-              outline: "none",
-              color: "black",
-              fontWeight: "500",
-              borderRadius: "50px",
-            }}
-            onMouseEnter={(e) => e.target.style.color = "black"}
-            onMouseLeave={(e) => e.target.style.color = "black"}
-          >
-            Get in touch  <ArrowRightOutlined style={{ fontSize: '14px', fontWeight: "bolder", color: "black" }} />
-          </Button>
+          Knowledge
         </>
       ),
+      key: 'knowledge',
+      path: '/Page/Knowledge'
+    },
+    {
       key: 'getintouch',
       path: '/Page/Contactus'
     },
@@ -213,9 +217,78 @@ export default function Header() {
 
             <div></div>
             <div></div>
+            <Menu
+              theme="light"
+              mode="horizontal"
+              onClick={onClick}
+              onOpenChange={onOpenChange}
+              className="custom-menu"
+              selectedKeys={[current]}
+              style={{
+                flex: 1,
+                fontSize: "16px",
+                minWidth: 0,
+                maxWidth: "900px",
+                backgroundColor: "transparent",
+                border: "none",
+                display: modeMobile ? "none" : "flex",
+                fontWeight: 400,
+                justifyContent: "space-around",
+                padding: 0,
+              }}
+            >
+              <Menu.Item key="home">
+                Home
+              </Menu.Item>
+
+              <Menu.SubMenu
+                key="service"
+                title={(
+                  <>
+                    Service {modeMobile ? '' : openSubMenu ? <DownOutlined style={{ fontSize: '10px' }} /> : <RightOutlined style={{ fontSize: '10px' }} />}
+                  </>
+                )}
+              >
+                <Menu.Item key="knowledge" selectedKeys={[current]}>knowledge</Menu.Item>
+                <Menu.Item key="ourteam"selectedKeys={[current]}>Our Team</Menu.Item>
+                <Menu.Item key="businessRT"selectedKeys={[current]}>Business Reorientation</Menu.Item>
+                <Menu.Item key="strategicSolutions"selectedKeys={[current]}>Strategic Solutions</Menu.Item>
+                <Menu.Item key="finacialSolutions"selectedKeys={[current]}>Finacial Solutions</Menu.Item>
+
+              </Menu.SubMenu>
+
+              <Menu.Item key="trackrecord">
+                Track Records
+              </Menu.Item>
+              {/* <Menu.Item key="ourteam">
+                ourTeam
+              </Menu.Item> */}
+
+              <Menu.Item key="contactus">
+                Contact us
+              </Menu.Item>
+              <Menu.Item key="getintouch">
+                <Button
+                  style={{
+                    backgroundColor: "#CF982C",
+                    width: "179px",
+                    height: "50px",
+                    border: "none",
+                    outline: "none",
+                    color: "black",
+                    fontWeight: "500",
+                    borderRadius: "50px",
+                  }}
+                  onMouseEnter={(e) => e.target.style.color = "black"}
+                  onMouseLeave={(e) => e.target.style.color = "black"}
+                >
+                  Get in touch  <ArrowRightOutlined style={{ fontSize: '14px', fontWeight: "bolder", color: "black" }} />
+                </Button>
+              </Menu.Item>
+            </Menu>
 
 
-            <StyledMenu
+            {/* <StyledMenu
               theme='light'
               mode="horizontal"
               onClick={(e) => {
@@ -237,7 +310,7 @@ export default function Header() {
                 justifyContent: "space-around",
                 padding: 0,
               }}
-            />
+            /> */}
 
             {modeMobile && (
               <>
